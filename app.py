@@ -19,6 +19,10 @@ from langchain_chroma import Chroma
 from langchain_community.chat_message_histories import ChatMessageHistory
 import camelot  # Import camelot for table extraction
 from langchain_core.documents import Document  # Import the Document class
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 from dotenv import load_dotenv
 load_dotenv()
