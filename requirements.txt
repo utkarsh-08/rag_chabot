@@ -37,3 +37,4 @@ huggingface_hub
 camelot-py
 faiss-cpu
 accelerate
+pysqlite3-binary
